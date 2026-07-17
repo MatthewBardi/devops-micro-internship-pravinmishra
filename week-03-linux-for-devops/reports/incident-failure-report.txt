@@ -1,0 +1,16 @@
+Linux Health Triage Report
+Operator: Matthew Bardi
+Generated: Fri Jul 17 16:59:41 UTC 2026
+
+[FAIL] Nginx service — Service status: inactive
+[FAIL] Port 80 — No listener detected on port 80
+[FAIL] HTTP response — localhost returned 000
+[HEALTHY] Root disk usage — 57% used
+[HEALTHY] Memory usage — 62% used
+
+Summary
+Healthy: 2
+Warnings: 0
+Failures: 3
+Overall status: FAIL
+Report: reports/latest-report.txt
