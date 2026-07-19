@@ -68,7 +68,7 @@ This is not a course. It is an internship-style program — real deployments, re
 **Your stack (uncomment each badge as you earn it):**
 
 <!-- Week 00 → Internet & Networking Basics -->
-<!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)
 
 <!-- Week 01 → Success Mindset -->
  [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
@@ -130,7 +130,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/share-7484570033629605888-x-aw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8 | https://medium.com/@ifybardi/what-happens-when-you-open-a-website-internet-and-networking-basics-636cef2d6a2d |
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/share-7478452674854608896-ffR0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPIJcA09mSDh9Dmz_Fnr6k9cADN8 | https://medium.com/@ifybardi/the-2-0-version-of-matthew-bardi-b0efe22f55e7 |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | — | — |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | — | — |

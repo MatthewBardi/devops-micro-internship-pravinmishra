@@ -34,7 +34,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+I learned that a protocol is a set of agreed rules that allows computers to communicate correctly. HTTP is one example because it defines how a browser requests a webpage and how the web server sends the webpage back.
 
 ---
 
@@ -59,7 +59,7 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+When a user anywhere in the world visits EpicReads, their browser sends a request across the internet to the server in Finland. The data is broken into small packets, a process called packet switching, and each packet may travel through different routes before being reassembled. The server has an IP address that identifies where it can be reached. TCP/IP manages the communication: IP helps route the packets to the correct destination, while TCP checks that all packets arrive in the right order and resends any that are missing. HTTP is the protocol used to request and deliver web pages. HTTPS performs the same job but encrypts the communication, making login details, payment information, and other data safer while travelling between the user and the EpicReads server.
 
 ---
 
@@ -102,18 +102,18 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* HTML
+* React
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Node.js
+* Python (Django)
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* MySQL
+* PostgreSQL
 
 ---
 
@@ -142,7 +142,7 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+DNS is the system that translates a human-friendly domain name such as epicreads.com into an IP address that computers use to locate the website server. To connect epicreads.com directly to 52.172.142.222, an A record should be created. An A record maps a domain name to an IPv4 address. The port number 3000 is not stored in the DNS record, so the web server or reverse proxy must handle traffic for the domain and forward it to the application running on port 3000.
 
 ---
 
@@ -218,7 +218,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-Add your URL here...
+https://www.linkedin.com/posts/share-7484570033629605888-x-aw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8
 ```
 
 ---
@@ -227,7 +227,26 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+Week 00 of the DevOps Micro Internship helped me strengthen my understanding of internet and networking fundamentals.
+
+🤖 ChatGPT
+I used ChatGPT as a learning assistant to understand networking protocols. A protocol is a set of agreed rules that allows computers to communicate correctly. HTTP is one example because it defines how browsers and web servers exchange webpages.
+
+🌐 Internet & Networking
+When users visit a website, data is divided into packets and sent across the internet. IP addresses identify devices, while TCP/IP routes the packets and ensures they arrive correctly. HTTP delivers webpages, while HTTPS encrypts the communication for better security.
+
+🏗️ App Architecture
+I learned the difference between two-tier and three-tier applications. A two-tier application connects the frontend directly to the database, while a three-tier application uses separate frontend, backend, and database layers.
+
+🌍 DNS
+DNS translates a domain name such as epicreads.com into an IP address. An A record connects a domain name to an IPv4 address.
+
+💻 VS Code Setup
+I also practised using Visual Studio Code with its integrated PowerShell terminal and ran basic commands directly from my project repository.
+
+This week gave me a clearer understanding of what happens behind the scenes when someone opens a website.
+
+P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://dmi.pravinmishra.com/s/MatthewBardi.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3
 
 ---
 
@@ -235,19 +254,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+I found it easy to understand protocols, IP addresses, and DNS when they were explained with practical examples. Creating the simple application architecture diagram also helped me see how frontend, backend, and database layers connect.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+The most difficult part was understanding how packet switching, TCP/IP, HTTP, DNS, and application layers all work together when a user opens a website. Drawing the architecture made the relationship clearer.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+Next week, I will improve by practising the networking concepts with more hands-on examples, reviewing unfamiliar terms, and documenting each task carefully as I complete it.
 
 ---
 
