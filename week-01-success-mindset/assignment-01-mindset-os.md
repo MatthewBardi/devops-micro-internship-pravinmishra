@@ -33,7 +33,7 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+One thing I think a lot of people might disagree with is that hard work doesn’t always guarantee success. I believe success is a matter of timing, opportunity and sometimes destiny. I have seen people work very hard and not get the result that they expected, at the time that they expected it. At the same time, I don't think that's an excuse to be lazy. Hard work is still important because it readies a person for the right opportunity. But I think real success occurs when effort, preparation, timing and the right opportunity all come together.
 
 ---
 
@@ -55,11 +55,11 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Consistency yields better results than waiting for motivation.
 
 ### Evidence from my life
 
-Add your answer here...
+I've found if I rely on motivation alone, I may start off strong but I don't always continue. But if I make a little routine and keep coming, I get better results. This has helped me in my learning journey as regular practice makes difficult technical topics easier over time.
 
 ---
 
@@ -67,11 +67,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+You don’t really understand it until you actually do it yourself.
 
 ### Evidence from my life
 
-Add your answer here...
+There have been times when I have watched a tutorial or read an explanation and thought I got the subject. But when I tried to do it myself I found I was missing some parts of it. More than watching or reading, I have learned by practicing with real tasks, errors and corrections.
 
 ---
 
@@ -79,12 +79,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Getting help early will save you time and money and will also avoid bigger mistakes.
 
 ### Evidence from my life
 
-Add your answer here...
-
+I thought I had to do everything myself, even when I was stuck in the mud. But I’ve discovered that clear questions don’t make me weak, they help me go faster. When I ask questions, or share what I've tried or ask for step by step guidance I usually understand the problem better and don't waste too much time.
 ---
 
 # Assignment 3. What does your 2.0 version look like?
@@ -131,17 +130,30 @@ Write as if a journalist is writing about you **3 to 7 years from now** (not 20 
 
 Include this line:
 
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3**
+> **P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) ( https://discord.pravinmishra.com/ ).**
 
 ## Your Article
+Five years ago, Matthew Bardi was still growing, learning, and trying to find his place in the tech industry. He was not always the most experienced person in the room, but he was serious about becoming better. He understood that growth would not happen by accident, so he started building better habits around learning, discipline, and showing proof of his work.
 
-Add your answer here...
+Instead of only watching tutorials or saying he wanted to improve, he began working on real projects. He practiced with Linux, Git, Docker, Kubernetes, Terraform, GitHub Actions, AWS, and Azure. Over time, his GitHub became more than a place to keep code. It became a record of his progress, mistakes, improvements, and the projects he had built. Each project showed that he was not just learning theory; he was learning how to solve real problems.
+
+As the years passed, Matthew grew into a confident Cloud Engineer who could design, deploy, troubleshoot, and explain cloud infrastructure clearly. He worked on cloud environments, automation, infrastructure documentation, migrations, access management, monitoring, and cost awareness. He became someone teams could trust because he was calm, careful, and willing to investigate problems properly before jumping to conclusions.
+
+He also started sharing what he was learning through LinkedIn posts, GitHub documentation, and blog articles. He wrote in simple language because he remembered what it felt like to be confused as a beginner. His articles covered topics like cloud infrastructure, automation, CI/CD, Terraform, Kubernetes basics, troubleshooting, and lessons from real technical challenges.
+
+In his career, Matthew earned relevant cloud certifications, contributed to important cloud projects, and became known for learning fast and asking the right questions. He did not pretend to know everything. Instead, he built a reputation for being honest, dependable, and committed to improving.
+
+Beyond the technical skills, his biggest growth was his mindset. He became more consistent, more organized, and more confident. He stopped measuring progress only by how much effort he made and started measuring it by what he actually produced.
+
+Today, Matthew represents what can happen when discipline, humility, faith, and consistent action come together. His journey was not perfect, but it was real. He built his 2.0 version one week, one project, one mistake, and one improvement at a time.
+
+**P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) ( https://discord.pravinmishra.com/ ).**
 
 ### Public Link
 
 Paste your link here:
 
-`Add your URL here`
+`https://medium.com/@ifybardi/the-2-0-version-of-matthew-bardi-b0efe22f55e7`
 
 ---
 
@@ -165,7 +177,7 @@ This is about self-awareness, not judgment.
 
 ### Answer Format
 
-**Yes / No**
+Yes
 
 If Yes:
 
@@ -173,7 +185,7 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+There have been times when I took shortcuts because I wanted quick results or because I did not want to go through the full process properly.  I remember feeling uncomfortable afterward. I felt guilt, stress, and disappointment in myself because I knew I could have done better. That experience reminded me that shortcuts may look easy in the moment, but they can affect your peace of mind and self-worth.
 
 ---
 
@@ -199,16 +211,17 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. The Compound Effect — Darren Hardy
+2. Ego Is the Enemy — Ryan Holiday
+3. Measure What Matters — John Doerr
+4. Extreme Ownership — Jocko Willink and Leif Babin
+5. Essentialism — Greg McKeown
+6. Make It Stick— Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel
+7. So Good They Can’t Ignore You— Cal Newport
+8. Start With Why — Simon Sinek
+9. The 7 Habits of Highly Effective People — Stephen R. Covey
+10. How to Win Friends and Influence People — Dale Carnegie
+
 
 ---
 
@@ -237,16 +250,16 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+Weekly hours of learning and practicing
+Cloud, automation, technical skills I am improving
+Projects completed and uploaded to GitHub
+Blog posts, LinkedIn posts or documentation published
+Deep work sessions free of distraction
+Time spent on social media & unnecessary use of phone
+Daily energy level and sleep quality
+Physical activity, walking, or exercise
+Expenses, savings and money management habits
+Certifications in progress, improved jobs, career advancement
 
 ---
 
@@ -272,7 +285,7 @@ Examples:
 
 Answer:
 
-Add your answer here...
+Yes
 
 ---
 
@@ -290,21 +303,31 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
 
----
+
+Mon-Thu: 60 minutes of concentrated study and practice
+Fri: Review notes and wrap up stuff* 
+Sat: DMI session, assignment work and hands on practice
+Sun: Weekly review, Planning for next week, GitHub update
 
 ### Focus Blocks
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+* Monday: 8:00 PM – 9:00 PM
+* Tuesday: 8:00 PM – 9:00 PM
+* Wednesday: 8:00 PM – 9:00 PM
+* Thursday: 8:00 PM – 9:00 PM
+* Saturday: DMI session, assignment work, and hands-on practice
+* Sunday: 6:00 PM – 7:00 PM for weekly review and planning
+
+
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
 
----
+4 focused learning sessions per week, plus the Saturday DMI session and Sunday weekly review.
+
 
 ### Distraction Rules
 
@@ -316,36 +339,45 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
 
----
+
+* Keep my phone on silent or away during focus time
+* Avoid social media until the learning session is completed
+* Work in a quiet place as much as possible
+* Focus on one task at a time instead of jumping between many things
+* If I get stuck, write down the issue clearly and ask for help instead of wasting too much time
+
+
 
 # Reflection – Week 1
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+My biggest realization this week is that I need a system, not just motivation. I can have all the best intentions but if I don’t have a defined routine, focus time and proof of work it’s easy to get distracted or inconsistent. I also learned that it’s better to make small progress every week than to wait for the perfect time to start.
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+My biggest weakness is that I overthink things and procrastinate because I want things to be clear before I jump in. This might make me waste my time or feel stuck. I learned that it is better to do something, make mistakes, ask questions and learn as you go, rather than wait until you feel you are ready 100%.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+I will do a weekly review every Sunday between 6:00 PM and 7:00 PM. During this time, I will think about what I did, what I didn’t do, what I learned, and where I need to focus for next week. This will keep me organized and consistent.
+
+
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/share-7478452674854608896-ffR0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
-- Blog / Medium : **ADD LINK HERE**  
+- LinkedIn Post URL: https://www.linkedin.com/posts/share-7478452674854608896-ffR0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8
+
+- Blog / Medium : https://medium.com/@ifybardi/the-2-0-version-of-matthew-bardi-b0efe22f55e7 
 
 ---
 
