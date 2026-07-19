@@ -1,4 +1,4 @@
-# Assignment 8 — Week 2 Reflection Blog
+# Assignment 8 - Week 2 Reflection Blog
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
@@ -12,7 +12,7 @@ You will also publish a LinkedIn post summarizing your learning and share both l
 
 ---
 
-# Task 1 — Write Your Reflection Blog
+# Task 1 - Write Your Reflection Blog
 
 ## Goal
 
@@ -22,9 +22,9 @@ Write a reflection blog covering your Week 2 learning experience.
 
 Your blog must include:
 
-* Title: **Reflection – Week 2**
+* Title: **Reflection - Week 2**
 * Minimum 300 words
-* At least 2–3 topics from Week 2 (Claude Code, Skills, Subagents, MCP, Hooks, Permissions, Memory)
+* At least 2-3 topics from Week 2 (Claude Code, Skills, Subagents, MCP, Hooks, Permissions, Memory)
 * Honest personal reflection (learning, challenges, mindset)
 * One habit/system you plan to implement
 * Your full name clearly visible
@@ -44,9 +44,9 @@ You can publish your blog on:
 
 ### Evidence
 
-#### Screenshot 1 — Blog published and visible
+#### Screenshot 1 - Blog published and visible
 
-Add your screenshot here.
+![Assignment 8 Screenshot 1](screenshots/Assignment8-Screenshot1.png)
 
 ---
 
@@ -54,11 +54,11 @@ Add your screenshot here.
 
 Blog Link:
 
-`Add your URL here`
+`https://github.com/MatthewBardi/devops-micro-internship-pravinmishra/blob/main/week-02-agentic-ai/reflection-week-2.md`
 
 ---
 
-# Task 2 — Create LinkedIn Post
+# Task 2 - Create LinkedIn Post
 
 ## Goal
 
@@ -78,7 +78,7 @@ Your post must include:
 
 ### Required P.S. Line (Must Include Exactly)
 
-> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
+> **P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining [DMI waiting list](https://forms.gle/3hvrWJBDzsDeJoPs6) (https://forms.gle/3hvrWJBDzsDeJoPs6).**
 
 ---
 
@@ -90,9 +90,9 @@ Your post must include:
 
 ### Evidence
 
-#### Screenshot 2 — LinkedIn post published
+#### Screenshot 2 - LinkedIn post published
 
-Add your screenshot here.
+![Assignment 8 Screenshot 2](screenshots/Assignment8-Screenshot2.png)
 
 ---
 
@@ -100,15 +100,29 @@ Add your screenshot here.
 
 LinkedIn Post Content (copy-paste here):
 
-```
-Paste your LinkedIn post content here
+```text
+Week 2 of the DevOps Micro Internship with Agentic AI has been a practical learning experience for me.
+
+This week, I worked with Claude Code and explored how an AI agent can support real DevOps workflows. I created reusable Skills, configured specialized Subagents, connected an MCP server to GitHub, and added Hooks and Permissions to prevent destructive commands.
+
+One of the most interesting tasks was configuring persistent memory. I saved project rules in MEMORY.md, restarted Claude Code completely, and confirmed that Claude could still remember the project colors and refuse a JavaScript request based on the saved rule.
+
+I also learned that AI agents still need strong guardrails. Hooks, permissions, verification steps, and human review are important when an agent is allowed to interact with infrastructure and development tools.
+
+Going forward, I plan to build a habit of documenting project rules clearly and verifying every AI-generated action before accepting or executing it.
+
+- Matthew Bardi
+
+P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by Pravin Mishra. You can start your DevOps journey by joining this Discord community ( [https://discord.pravinmishra.com/](https://discord.pravinmishra.com/) ).
+
+#DMIByPravinMishra #AgenticAI #ClaudeCode #DevOps #LearningInPublic
 ```
 
 ---
 
 ### LinkedIn Post Link:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/matthew-bardi_dmibypravinmishra-agenticai-claudecode-share-7482745300437073920-eFDV/`
 
 ---
 
@@ -124,15 +138,15 @@ Paste your LinkedIn post content here
 
 # Completion Checklist
 
-* [ ] Blog written with required structure
-* [ ] Blog includes at least 2–3 Week 2 topics
-* [ ] Blog is publicly accessible
-* [ ] LinkedIn post created
-* [ ] Required P.S. line included
-* [ ] LinkedIn post content copied in submission field
-* [ ] Blog link added
-* [ ] LinkedIn post link added
-* [ ] Screenshots added to GitHub repo
+* [x] Blog written with required structure
+* [x] Blog includes at least 2-3 Week 2 topics
+* [x] Blog is publicly accessible
+* [x] LinkedIn post created
+* [x] Required P.S. line included
+* [x] LinkedIn post content copied in submission field
+* [x] Blog link added
+* [x] LinkedIn post link added
+* [x] Screenshots added to GitHub repo
 
 ---
 
@@ -146,11 +160,11 @@ It helps learners build strong DevOps foundations through hands-on experience.
 
 # Resources
 
-* 🌐 DMI Official Website: [https://pravinmishra.com/dmi](https://pravinmishra.com/dmi)
-* 🎓 DevOps for Beginners (Udemy): [https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/](https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/)
-* 🎓 Agentic AI DevOps with Claude Code: [https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/](https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/)
-* 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: [https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/](https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/)
-* ▶️ YouTube Playlist: [https://www.youtube.com/playlist?list=PLFeSNDtI4Cho](https://www.youtube.com/playlist?list=PLFeSNDtI4Cho)
-* 🔗 Pravin Mishra (LinkedIn): [https://www.linkedin.com/in/pravin-mishra-aws-trainer/](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
-* 🏢 CloudAdvisory (LinkedIn): [https://www.linkedin.com/company/thecloudadvisory/](https://www.linkedin.com/company/thecloudadvisory/)
+* YouTube Playlist: [https://www.youtube.com/playlist?list=PLFeSNDtI4Cho](https://www.youtube.com/playlist?list=PLFeSNDtI4Cho)
+* DevOps for Beginners (Udemy): [https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/](https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/)
+* Agentic AI DevOps with Claude Code: [https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/](https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/)
+* DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: [https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/](https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/)
+* YouTube Playlist: [https://www.youtube.com/playlist?list=PLFeSNDtI4Cho](https://www.youtube.com/playlist?list=PLFeSNDtI4Cho)
+* Pravin Mishra (LinkedIn): [https://www.linkedin.com/in/pravin-mishra-aws-trainer/](https://www.linkedin.com/in/pravin-mishra-aws-trainer/)
+* CloudAdvisory (LinkedIn): [https://www.linkedin.com/company/thecloudadvisory/](https://www.linkedin.com/company/thecloudadvisory/)
 
