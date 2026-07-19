@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Matthew Bardi |
+| **LinkedIn** | [Matthew Bardi](https://www.linkedin.com/in/matthew-bardi/) |
+| **Location** | Lagos, Nigeria |
+| **Background** | Cloud Engineer focused on Azure, cloud infrastructure, automation, and hands-on learning |
+| **Goal** | Become a stronger Cloud Engineer by building real projects, improving my technical skills, and documenting my learning consistently |
 
 ---
 
@@ -57,7 +57,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 *Earn a badge each week. To unlock: remove the `<!--` and `-->` from the badge line below.*
 
-*Share your stack:* `https://github.com/YOUR-USERNAME/devops-micro-internship-pravinmishra#my-devops-stack`
+*Share your stack:* `https://github.com/MatthewBardi/devops-micro-internship-pravinmishra#my-devops-stack`
 
 **Preview — what your full stack looks like:**
 
@@ -71,13 +71,13 @@ This is not a course. It is an internship-style program — real deployments, re
 <!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
 
 <!-- Week 01 → Success Mindset -->
-<!-- [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
+ [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
 
 <!-- Week 02 → Agentic AI with Claude Code -->
-<!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
+ [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) 
 
 <!-- Week 03 → Linux & Bash for DevOps -->
-<!-- [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) -->
+ [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) 
 
 <!-- Week 04 → Git & GitHub -->
 <!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) -->
@@ -131,9 +131,9 @@ This is not a course. It is an internship-style program — real deployments, re
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
-| 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
-| 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
+| 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/share-7478452674854608896-ffR0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPIJcA09mSDh9Dmz_Fnr6k9cADN8 | https://medium.com/@ifybardi/the-2-0-version-of-matthew-bardi-b0efe22f55e7 |
+| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | — | — |
+| 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
