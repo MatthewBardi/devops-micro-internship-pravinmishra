@@ -20,7 +20,7 @@ Create the `.claude/agents/` directory and add all required agent files.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/agents/` with all 3 files
 
-Add your screenshot here.
+![Screenshot 1 - VS Code sidebar showing all three subagent files](screenshots/Assignment4-Screenshot1.png)
 
 ---
 
@@ -54,13 +54,13 @@ The tf-writer uses `inherit` so it can use the same model selected for the main 
 
 #### Screenshot 2 — `security-auditor.md` frontmatter showing model and tools configuration
 
-Add your screenshot here.
+![Screenshot 2 - Security auditor frontmatter showing model and tools](screenshots/Assignment4-Screenshot2.png)
 
 ---
 
 #### Screenshot 3 — `cost-optimizer.md` frontmatter showing the model and tools configuration
 
-Add your screenshot here.
+![Screenshot 3 - Cost optimizer frontmatter showing model and tools](screenshots/Assignment4-Screenshot3.png)
 
 ---
 
@@ -74,13 +74,13 @@ Trigger the security auditor agent and analyze the generated security report for
 
 #### Screenshot 4 — The delegation message showing Claude launched the security-auditor
 
-Add your screenshot here.
+![Screenshot 4 - Claude delegation message launching the security auditor](screenshots/Assignment4-Screenshot4.png)
 
 ---
 
 #### Screenshot 5 — Security audit report output
 
-Add your screenshot here.
+![Screenshot 5 - Security audit report output](screenshots/Assignment4-Screenshot5.png)
 
 ---
 
@@ -94,7 +94,7 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 #### Screenshot 6 — The full cost optimization report
 
-Add your screenshot here.
+![Screenshot 6 - Full cost optimization report](screenshots/Assignment4-Screenshot6.png)
 
 ---
 
