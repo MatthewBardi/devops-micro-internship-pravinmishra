@@ -39,7 +39,7 @@ Pravin Mishra [Linkedin profile](https://www.linkedin.com/in/pravin-mishra-aws-t
 | Group | Comentors |
 |-------|-----------|
 | Lead Co-Mentor | [Anjana Muthunayake](https://www.linkedin.com/in/anjana-muthunayake/) |
-| Group-1 Comentors | [Nkechi Ahanonye](https://www.linkedin.com/in/nkechiahanonye/), [Tanisha Borana](https://www.linkedin.com/in/tanisha-borana-552797233/), [Anuradha Iyer](https://www.linkedin.com/in/iyeranuradha/) |
+| Group-1 Comentors | [Tanisha Borana](https://www.linkedin.com/in/tanisha-borana-552797233/), [Anuradha Iyer](https://www.linkedin.com/in/iyeranuradha/) |
 | Group-2 Comentors | [Anjana Muthunayake](https://www.linkedin.com/in/anjana-muthunayake/), [Joy Ukpabi](https://www.linkedin.com/in/joyukpabi/) |
 | Group-3 Comentors | [Bhupendra Bhati](https://www.linkedin.com/in/bhupendrabhati/), [Ranbir Kaur](https://www.linkedin.com/in/ranbirkaur/) |
 
