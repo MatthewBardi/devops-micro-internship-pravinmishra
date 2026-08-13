@@ -1,0 +1,13 @@
+{
+    "mcpServers":  {
+                       "jira":  {
+                                    "args":  [
+                                                 "mcp-atlassian"
+                                             ],
+                                    "env":  {
+
+                                            },
+                                    "command":  "uvx"
+                                }
+                   }
+}
