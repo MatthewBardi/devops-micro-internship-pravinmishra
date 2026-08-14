@@ -135,7 +135,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/matthew-bardi_dmibypravinmishra-agenticai-claudecode-activity-7482745301544628225-bkSB?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8 | https://medium.com/@ifybardi/how-agentic-ai-changed-the-way-i-work-with-claude-code-2e2c30b94210 |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/matthew-bardi_cloudengineer-linux-bash-activity-7483960674298015745-SuWB?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8 | https://medium.com/@ifybardi/what-i-learned-from-linux-and-bash-for-devops-723729794acd |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/share-7486732228962619392--xhk/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8 | https://medium.com/@ifybardi/a782b1013f29 |
-| 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
+| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/activity-7493377298847485954-Ght1 | https://medium.com/@ifybardi/what-i-learned-about-devops-lifecycle-and-agile-by-running-real-sprints-in-jira-e86b3428de8c |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
