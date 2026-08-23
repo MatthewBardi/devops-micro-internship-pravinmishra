@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-Add your diagram image or link here.
+![Assignment 6 Architecture](screenshots/week-06-assignment-06-architecture.png)
 
 ---
 
@@ -34,13 +34,13 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 **Region:**
 
-Write your answer here.
+US East (N. Virginia) - us-east-1
 
 ---
 
 **Services:**
 
-Write your answer here.
+Amazon VPC, EC2, Application Load Balancer (Elastic Load Balancing), Amazon RDS for MySQL, Security Groups, Internet Gateway, NAT Gateway, Route Tables, AWS IAM, AWS Systems Manager, and Systems Manager Parameter Store.
 
 ---
 
@@ -56,7 +56,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
+`br-public-alb-54505861.us-east-1.elb.amazonaws.com`
 
 ---
 
@@ -70,37 +70,37 @@ Capture visual proof of every tier and load balancer.
 
 #### Web EC2
 
-Add your screenshot here.
+![Web EC2](screenshots/week-06-assignment-06-screenshot-01-web-ec2.png)
 
 ---
 
 #### App EC2
 
-Add your screenshot here.
+![App EC2](screenshots/week-06-assignment-06-screenshot-02-app-ec2.png)
 
 ---
 
 #### Public ALB
 
-Add your screenshot here.
+![Public ALB](screenshots/week-06-assignment-06-screenshot-03-public-alb.png)
 
 ---
 
 #### Internal ALB
 
-Add your screenshot here.
+![Internal ALB](screenshots/week-06-assignment-06-screenshot-04-internal-alb.png)
 
 ---
 
 #### RDS + Replica
 
-Add your screenshot here.
+![RDS and Read Replica](screenshots/week-06-assignment-06-screenshot-05-rds-replica.png)
 
 ---
 
 #### App UI proof
 
-Add your screenshot here.
+![Book Review App UI](screenshots/week-06-assignment-06-screenshot-06-app-ui.png)
 
 ---
 
@@ -114,19 +114,19 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+The Book Review App was successfully deployed as a three-tier architecture across two Availability Zones. The public Application Load Balancer distributes traffic to two Next.js/Nginx Web Tier EC2 instances. The Web Tier communicates with two private Node.js/Express App Tier instances through an internal Application Load Balancer on port 3001. The App Tier connects to a private Multi-AZ MySQL RDS primary with a read replica. The application successfully loads book data through the public ALB while the App and Database tiers remain inaccessible directly from the Internet.
 
 ---
 
 **Issues + fixes:**
 
-Write your answer here.
+Several issues were resolved during deployment. The AWS account reached its RDS instance quota, so the older EpicBook database was snapshotted and removed to free capacity. The existing Multi-AZ ha-mysql database was preserved with a safety snapshot and reused for the capstone. Because AWS would not move the existing RDS instance between subnet groups inside the same VPC, the private subnet roles were reorganized so the existing 10.0.11.0/24 and 10.0.12.0/24 subnets became the isolated Database Tier, while 10.0.21.0/24 and 10.0.22.0/24 became the private App Tier using NAT for outbound access. The frontend initially displayed 'No books available' because of an API path mismatch; Nginx was updated on both Web Tier instances to correctly route the frontend API request to the backend.
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+AWS Management Console and AWS CloudShell/AWS CLI were used to build and verify the infrastructure. AWS Systems Manager Run Command was used to configure and troubleshoot private EC2 instances without exposing them publicly, and Parameter Store was used to securely hold database and application secrets. The official Book Review App GitHub repository, AWS documentation, Linux command-line tools, curl, systemd, Nginx, Node.js, MySQL utilities, and ChatGPT were used for deployment, validation, and troubleshooting.
 
 ---
 
@@ -142,13 +142,13 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/feed/update/urn:li:share:7497414863644962816/`
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![LinkedIn Post](screenshots/week-06-assignment-06-linkedin-post.png)
 
 ---
 
@@ -161,14 +161,14 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Architecture diagram completed
-- [ ] Task 2: AWS Region and services documented
-- [ ] Task 3: Public ALB DNS confirmed working
-- [ ] Task 4: All six evidence screenshots captured (Web Tier, App Tier, both ALBs, RDS + replica, app UI)
-- [ ] Task 5: Deployment summary completed (what worked, issues/fixes, tools/sources)
-- [ ] LinkedIn post published and URL submitted
-- [ ] App Tier and Database Tier confirmed not publicly accessible
-- [ ] No sensitive data exposed
+- [x] Task 1: Architecture diagram completed
+- [x] Task 2: AWS Region and services documented
+- [x] Task 3: Public ALB DNS confirmed working
+- [x] Task 4: All six evidence screenshots captured (Web Tier, App Tier, both ALBs, RDS + replica, app UI)
+- [x] Task 5: Deployment summary completed (what worked, issues/fixes, tools/sources)
+- [x] LinkedIn post published and URL submitted
+- [x] App Tier and Database Tier confirmed not publicly accessible
+- [x] No sensitive data exposed
 
 ---
 
