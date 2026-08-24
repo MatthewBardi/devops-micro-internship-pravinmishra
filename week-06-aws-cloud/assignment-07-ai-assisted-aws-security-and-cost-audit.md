@@ -327,9 +327,9 @@ Follow the Assignment Submission Guidelines.
 - [x] All "Notes You Must Write" questions are answered in your own words
 - [x] No AWS credentials or unblurred account IDs exposed
 - [x] LinkedIn post published and URL submitted
-- [ ] GitHub URL included in the Google Doc
-- [ ] Google Doc is accessible
-- [ ] Link tested in incognito mode
+- [x] GitHub URL included in the Google Doc
+- [x] Google Doc is accessible
+- [x] Link tested in incognito mode
 
 ---
 
@@ -341,7 +341,7 @@ Submit only your Google Doc link.
 
 Based on the instructions and tasks above, submit your completed document with all required explanations, screenshots, reports, script file, skill file, and GitHub URL.
 
-`Add your Google Doc link here`
+`https://docs.google.com/document/d/1uS3ZHfLhmI-H7CaxKVqG1uF3AoJj9E8vXB29r9tfvws/edit?usp=sharing`
 
 ---
 
