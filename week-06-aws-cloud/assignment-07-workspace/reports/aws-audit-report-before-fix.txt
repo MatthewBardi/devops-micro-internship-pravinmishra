@@ -1,0 +1,64 @@
+-----------------------------------------------------------------------
+AWS READ-ONLY SECURITY AUDIT
+-----------------------------------------------------------------------
+Full Name : Matthew Bardi
+Profile   : dmi-audit
+Region    : us-east-1
+Mode      : READ-ONLY (list-/get-/describe- only, no remediation)
+-----------------------------------------------------------------------
+
+
+[1/5] S3 public-access settings
+      matthew-bardi-dmi-week6-portfolio-2026: Block Public Access incomplete [False	False	False	False]
+      matthew-bardi-dmi-week6-portfolio-2026: bucket policy is PUBLIC
+
+[2/5] SSH port 22 open to 0.0.0.0/0
+      Security groups exposing SSH to the internet:
+sg-0f5ed1abae52ba88d	launch-wizard-1	vpc-054b0633122161c88
+
+[3/5] MySQL port 3306 open to 0.0.0.0/0
+      No security group exposes port 3306 to 0.0.0.0/0.
+
+[4/5] Publicly accessible RDS instances
+      No RDS instance or cluster is publicly accessible.
+
+[5/5] Unencrypted EBS volumes
+      EBS encryption-by-default for us-east-1: False
+      Unencrypted EBS volumes (VolumeId Size Type State AZ):
+vol-0fceed3794cef6e0c	8	gp3	in-use	us-east-1a
+vol-071c906afe12122fc	8	gp2	in-use	us-east-1b
+vol-0c7e15d4388301151	8	gp2	in-use	us-east-1a
+vol-0773a3b34c0a53cb5	8	gp2	in-use	us-east-1b
+vol-0002d197a9a4ad16c	8	gp2	in-use	us-east-1a
+vol-0637a61c0e697d50c	8	gp2	in-use	us-east-1b
+vol-07d67660eeff3f523	8	gp2	in-use	us-east-1a
+vol-07022c5e7976eb47c	8	gp3	in-use	us-east-1a
+vol-0ffd4c44ec23bc350	8	gp2	in-use	us-east-1a
+
+-----------------------------------------------------------------------
+AUDIT SUMMARY
+-----------------------------------------------------------------------
+Full Name : Matthew Bardi
+Profile   : dmi-audit
+Region    : us-east-1
+
+WARN   S3 public-access settings
+       -> public-access exposure: matthew-bardi-dmi-week6-portfolio-2026(partial-BPA) matthew-bardi-dmi-week6-portfolio-2026(public-policy)
+FAIL   SSH port 22 open to 0.0.0.0/0
+       -> SSH 22 open to 0.0.0.0/0
+PASS   MySQL port 3306 open to 0.0.0.0/0
+       -> no world-open MySQL
+PASS   Publicly accessible RDS instances
+       -> no public RDS
+WARN   Unencrypted EBS volumes
+       -> unencrypted EBS volumes present
+
+PASS  : 2
+WARN  : 2
+FAIL  : 1
+
+OVERALL STATUS: FAIL
+-----------------------------------------------------------------------
+Report written to: /mnt/c/Users/PC/Desktop/devops-micro-internship-pravinmishra/week-06-aws-cloud/assignment-07-workspace/reports/aws-audit-report.txt
+This audit made no changes to any AWS resource.
+Any remediation must be reviewed and run manually by the operator.
