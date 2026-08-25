@@ -136,7 +136,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/matthew-bardi_cloudengineer-linux-bash-activity-7483960674298015745-SuWB?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8 | https://medium.com/@ifybardi/what-i-learned-from-linux-and-bash-for-devops-723729794acd |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/share-7486732228962619392--xhk/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8 | https://medium.com/@ifybardi/a782b1013f29 |
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/activity-7493377298847485954-Ght1 | https://medium.com/@ifybardi/what-i-learned-about-devops-lifecycle-and-agile-by-running-real-sprints-in-jira-e86b3428de8c |
-| 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/feed/update/urn:li:ugcPost:7497487646697508864/ | https://medium.com/@ifybardi/what-i-learned-building-real-aws-infrastructure-during-week-6-of-my-devops-internship-468ed4cdf6f5 |
+| 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/ugcPost-7497487646697508864-f6t_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8 | https://medium.com/@ifybardi/what-i-learned-building-real-aws-infrastructure-during-week-6-of-my-devops-internship-468ed4cdf6f5 |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
