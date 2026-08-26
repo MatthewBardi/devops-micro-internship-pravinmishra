@@ -30,13 +30,13 @@ Confirm successful Azure Portal access and Locate the required services and subs
 
 #### Screenshot 1 — Azure Portal homepage after successful login
 
-Add your screenshot here.
+![Azure Portal homepage after successful login](screenshots/01-azure-portal-homepage.png)
 
 ---
 
 #### Screenshot 2 — "Subscriptions" section showing the "Free Trial" subscription
 
-Add your screenshot here.
+![Azure Free Trial subscription verification](screenshots/02-azure-free-subscription.png)
 
 ---
 
@@ -44,7 +44,7 @@ Add your screenshot here.
 
 Write a three-to-four-line paragraph explaining which Azure services you plan to explore first and why.
 
-Write your answer here.
+I plan to explore Azure Virtual Machines, Virtual Networks, and Storage Accounts first because they are core services used in many cloud environments. I also want to understand Resource Groups and Network Security Groups because they help organize and secure Azure resources. Learning these services will give me a practical foundation for deploying, networking, and managing workloads in Azure.
 
 ---
 
@@ -57,12 +57,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Azure Free Account created with identity, phone, and payment verification completed
-- [ ] Microsoft Agreement and Offer Terms accepted
-- [ ] Azure Portal accessed successfully (Screenshot 1)
-- [ ] Free Trial subscription confirmed (Screenshot 2)
-- [ ] Reflection paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [x] Azure Free Account created with identity, phone, and payment verification completed
+- [x] Microsoft Agreement and Offer Terms accepted
+- [x] Azure Portal accessed successfully (Screenshot 1)
+- [x] Free Trial subscription confirmed (Screenshot 2)
+- [x] Reflection paragraph written (Notes)
+- [x] No sensitive information exposed
 
 ---
 
