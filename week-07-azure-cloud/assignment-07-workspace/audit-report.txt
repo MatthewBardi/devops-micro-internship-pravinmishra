@@ -1,0 +1,65 @@
+============================================================
+Azure Security Posture Audit
+Full Name: Matthew Bardi
+Generated: 2026-09-07 17:29:07 WAT
+============================================================
+
+Azure subscription: Azure subscription 1
+
+------------------------------------------------------------
+CHECK 1 - NSG SSH/RDP Internet Exposure
+------------------------------------------------------------
+NSG inspected: bookreview-app-nsg
+NSG inspected: bookreview-db-nsg
+NSG inspected: bookreview-web-nsg
+Evidence: No inbound SSH/RDP rule open to 0.0.0.0/0, ::/0, Internet, or * was found.
+[PASS] NSG SSH/RDP exposure
+
+------------------------------------------------------------
+CHECK 2 - Storage Account Public Blob Access
+------------------------------------------------------------
+Storage Account: minifinance0830152940
+  allowBlobPublicAccess: False
+  publicNetworkAccess: None
+Storage Account: minifinance0830102707
+  allowBlobPublicAccess: False
+  publicNetworkAccess: None
+Evidence: Blob public access is disabled at the Storage Account level.
+[PASS] Storage Account public blob access
+
+------------------------------------------------------------
+CHECK 3 - Azure VM Disk Encryption Status
+------------------------------------------------------------
+VM inspected: bookreview-app1
+  OS disk: bookreview-app1_disk1_eb308247ed9049b6b58767a837f73eaa
+  Encryption type: EncryptionAtRestWithPlatformKey
+VM inspected: bookreview-app2
+  OS disk: bookreview-app2_OsDisk_1_dc975cbba29f42069be23023c50153c7
+  Encryption type: EncryptionAtRestWithPlatformKey
+VM inspected: bookreview-web1
+  OS disk: bookreview-web1_disk1_c53ff68113e140afa58280f3306b0f76
+  Encryption type: EncryptionAtRestWithPlatformKey
+VM inspected: bookreview-web2
+  OS disk: bookreview-web2_disk1_36925b18764740bd9e7dd1a0a972721f
+  Encryption type: EncryptionAtRestWithPlatformKey
+Evidence: All inspected managed disks report Azure encryption at rest.
+[PASS] VM disk encryption
+
+------------------------------------------------------------
+CHECK 4 - MySQL Flexible Server Public Network Access
+------------------------------------------------------------
+MySQL Server: bookreviewmysql0902214133
+  publicNetworkAccess: Disabled
+MySQL Server: bookreviewmysql0903092029
+  publicNetworkAccess: Disabled
+Evidence: MySQL public network access is disabled.
+[PASS] MySQL public network access
+
+============================================================
+AUDIT SUMMARY
+============================================================
+PASS: 4
+WARN: 0
+FAIL: 0
+Report: audit-report.txt
+Overall result: PASS
