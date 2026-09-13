@@ -20,7 +20,7 @@ Create a `terraform-aws-vm` project directory for the AWS Terraform configuratio
 
 #### Screenshot 1 — File Explorer, VS Code, or terminal showing the `terraform-aws-vm` project directory
 
-Add your screenshot here.
+![Screenshot 1 - terraform-aws-vm project directory](./screenshots/assignment-02-01-project-directory.png)
 
 ---
 
@@ -34,7 +34,7 @@ Define the AWS provider, a VPC (10.0.0.0/16) with a public subnet (10.0.1.0/24) 
 
 #### Screenshot 2 (optional) — `main.tf` showing the VPC and EC2 resource blocks
 
-Add your screenshot here.
+![Screenshot 2 - AWS Terraform configuration](./screenshots/assignment-02-02-main-tf.png)
 
 ---
 
@@ -48,7 +48,7 @@ Run `terraform init` and confirm the working directory initializes successfully.
 
 #### Screenshot 3 — Terminal showing successful `terraform init` output
 
-Add your screenshot here.
+![Screenshot 3 - Terraform init](./screenshots/assignment-02-03-terraform-init.png)
 
 ---
 
@@ -62,13 +62,15 @@ Review `terraform plan`, run `terraform apply`, and record the EC2 instance's pu
 
 #### Screenshot 4 — Terraform apply output showing successful completion
 
-Add your screenshot here.
+![Screenshot 4 - Terraform apply](./screenshots/assignment-02-04-terraform-apply.png)
 
 ---
 
 #### Screenshot 5 — Terraform output showing the EC2 public IP
 
-Add your screenshot here.
+![Screenshot 5 - EC2 public IP](./screenshots/assignment-02-05-ec2-public-ip.png)
+
+**EC2 public IP used for validation:** `54.221.184.36`
 
 ---
 
@@ -82,13 +84,13 @@ Confirm the EC2 instance is running in the public subnet with a public IP, insta
 
 #### Screenshot 6 — EC2 instance running in the AWS Console, with the subnet and public IP visible
 
-Add your screenshot here.
+![Screenshot 6 - EC2 instance running](./screenshots/assignment-02-06-ec2-running-console.png)
 
 ---
 
 #### Screenshot 7 — Browser showing the Nginx page through the EC2 public IP, or terminal showing a successful SSH connection
 
-Add your screenshot here.
+![Screenshot 7 - Nginx browser validation](./screenshots/assignment-02-07-nginx-browser.png)
 
 ---
 
@@ -102,7 +104,7 @@ Run `terraform destroy` to remove the Terraform-managed AWS resources after test
 
 #### Screenshot 8 — Terminal showing successful `terraform destroy` completion
 
-Add your screenshot here.
+![Screenshot 8 - Terraform destroy](./screenshots/assignment-02-08-terraform-destroy.png)
 
 ---
 
@@ -110,7 +112,7 @@ Add your screenshot here.
 
 Write a short paragraph about any challenges you faced and how you solved them.
 
-Write your answer here.
+A challenge I encountered was that my existing AWS CLI login session had expired, which initially prevented Terraform from authenticating to AWS. I reauthenticated to AWS, verified that the CLI session was working, and then continued with Terraform validation, planning, and deployment. Nginx was installed automatically on the EC2 instance using user data. I verified that the instance was running in the public subnet with a public IP and confirmed the Nginx page was reachable in a browser. After completing all validation and screenshots, I destroyed all Terraform-managed AWS resources.
 
 ---
 
@@ -124,14 +126,14 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: `terraform-aws-vm` project created (Screenshot 1)
-- [ ] Task 2: `main.tf` defines VPC, subnets, IGW, Security Group, and EC2 (Screenshot 2, optional)
-- [ ] Task 3: `terraform init` completed successfully (Screenshot 3)
-- [ ] Task 4: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–5)
-- [ ] Task 5: EC2 instance verified running and accessible (Screenshots 6–7)
-- [ ] Task 6: `terraform destroy` completed successfully (Screenshot 8)
-- [ ] Challenges/solutions paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [x] Task 1: `terraform-aws-vm` project created (Screenshot 1)
+- [x] Task 2: `main.tf` defines VPC, subnets, IGW, Security Group, and EC2 (Screenshot 2, optional)
+- [x] Task 3: `terraform init` completed successfully (Screenshot 3)
+- [x] Task 4: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–5)
+- [x] Task 5: EC2 instance verified running and accessible (Screenshots 6–7)
+- [x] Task 6: `terraform destroy` completed successfully (Screenshot 8)
+- [x] Challenges/solutions paragraph written (Notes)
+- [x] No sensitive information exposed
 
 ---
 
