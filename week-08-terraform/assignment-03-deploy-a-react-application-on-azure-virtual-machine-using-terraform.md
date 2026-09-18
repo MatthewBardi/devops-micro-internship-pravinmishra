@@ -1,188 +1,108 @@
-# Assignment 3 — Deploy a React Application on Azure Virtual Machine Using Terraform
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+# Assignment 3 — Deploy a React Application on Azure Using Terraform
 
----
+**DevOps Micro Internship (DMI), Cohort 3**
+**Name:** Matthew Bardi
 
-## Purpose
+## Project overview
 
-In this assignment, you will use Terraform to provision an Azure resource group, network, and Ubuntu 20.04 VM, then deploy the `my-react-app` React application onto the VM over SSH and serve it through Nginx.
+I used Terraform to provision an Azure resource group, virtual network, subnet, network security group, public IP, network interface, and Ubuntu 20.04 virtual machine. I used `cloud-init.sh` to automate the installation of Node.js, npm, Git, and Nginx; clone and build the React application; and serve the production build through Nginx.
 
----
+The application was verified at **http://9.205.159.227** while the VM was running. I subsequently destroyed the eight Terraform-managed resources as required by the assignment, so the website is no longer online.
 
-# Task 1 — Create a New Terraform Project
+## Infrastructure and deployment
 
-## Goal
+- **Terraform configuration:** `terraform-react-azure/main.tf`
+- **Automated setup script:** `terraform-react-azure/cloud-init.sh`
+- **Azure resource group:** `rg-week8-react-terraform`
+- **Virtual machine:** `vm-week8-react`
+- **VM configuration:** Ubuntu 20.04, Standard B1s
+- **Network access:** SSH (port 22) and HTTP (port 80)
+- **Application:** `https://github.com/pravinmishraaws/my-react-app`
+- **Web server:** Nginx
 
-Create a `terraform-react-azure` project directory for the Azure Terraform configuration.
+Terraform supplies the setup script to the VM using `custom_data = base64encode(file("${path.module}/cloud-init.sh"))`. On startup, cloud-init installs the required software, builds the React app, copies the production build into `/var/www/html`, and configures Nginx to serve it.
 
-### Evidence
+## Evidence
 
-#### Screenshot 1 — File Explorer, VS Code, or terminal showing the `terraform-react-azure` project directory
+### Screenshot 1 — Terraform version
 
-Add your screenshot here.
+![Terraform version](screenshots/assignment-03-01-terraform-version.png)
 
----
+### Screenshot 2 — Azure CLI version
 
-# Task 2 — Write main.tf to Provision the Azure Infrastructure
+![Azure CLI version](screenshots/assignment-03-02-azure-cli-version.png)
 
-## Goal
+### Screenshot 3 — HashiCorp Terraform VS Code extension
 
-Define the resource group, virtual network/subnet, Network Security Group (SSH 22, HTTP 80), public IP, network interface, and Ubuntu 20.04 Standard B1s VM in `main.tf`.
+![Terraform extension installed](screenshots/assignment-03-03-terraform-extension.png)
 
-### Evidence
+### Screenshot 4 — Terraform provider, resource group, and NSG rules
 
-#### Screenshot 2 — VS Code showing `main.tf` with the required Azure resources, with any password or sensitive values hidden
+![Terraform provider and resource group](screenshots/assignment-03-04-provider-resource-group.png)
 
-Add your screenshot here.
+![Network security group rules](screenshots/assignment-03-04-nsg-rules.png)
 
----
+### Screenshot 5 — VM configuration with cloud-init
 
-# Task 3 — Initialize Terraform
+![VM configuration](screenshots/assignment-03-05-vm-cloud-init.png)
 
-## Goal
+### Screenshot 6 — Completed cloud-init script
 
-Run `terraform init` and confirm the working directory initializes successfully.
+![Cloud-init script](screenshots/assignment-03-06-cloud-init.png)
 
-### Evidence
+### Screenshot 7 — Public IP output block
 
-#### Screenshot 3 — Terminal showing successful `terraform init` output
+![Public IP output configuration](screenshots/assignment-03-07-public-ip-output.png)
 
-Add your screenshot here.
+### Screenshot 8 — Successful Terraform initialization
 
----
+![Terraform init](screenshots/assignment-03-03-terraform-init.png)
 
-# Task 4 — Plan and Apply the Configuration
+### Screenshot 9 — Original Terraform plan
 
-## Goal
+The initial infrastructure plan proposed eight resources: **8 to add, 0 to change, 0 to destroy**.
 
-Review `terraform plan`, run `terraform apply`, and record the VM's public IP.
+![Terraform plan](screenshots/assignment-03-09-terraform-plan.png)
 
-### Evidence
+### Screenshot 10 — Successful Terraform apply
 
-#### Screenshot 4 — Terraform apply output showing successful completion
+The initial apply created the eight infrastructure resources. I later replaced the VM through Terraform to attach the automated cloud-init configuration while retaining the public IP.
 
-Add your screenshot here.
+![Terraform apply](screenshots/assignment-03-04-terraform-apply.png)
 
----
+### Screenshot 11 — Terraform public IP output
 
-#### Screenshot 5 — Azure portal showing the Virtual Machine running and its public IP
+![Terraform output](screenshots/assignment-03-11-terraform-output.png)
 
-Add your screenshot here.
+### Screenshot 12 — SSH verification of automated deployment
 
----
+Cloud-init completed, and its log reported that the React deployment completed successfully.
 
-# Task 5 — Connect to the Virtual Machine
+![Automated React deployment](screenshots/assignment-03-12-cloud-init-deployment.png)
 
-## Goal
+### Screenshot 13 — Nginx running
 
-Establish an SSH session with the Ubuntu VM through its public IP.
+![Nginx service status](screenshots/assignment-03-13-nginx-running.png)
 
-### Evidence
+### Screenshot 14 — React application in the browser
 
-#### Screenshot 6 — Terminal showing a successful SSH connection to the Azure VM
+The application loaded through the VM's public IP and displayed my name.
 
-Add your screenshot here.
+![React application](screenshots/assignment-03-14-react-browser.png)
 
----
+### Screenshot 15 — Successful Terraform destroy
 
-# Task 6 — Install Node.js, npm, and Git
+After capturing the deployment evidence, I ran `terraform destroy`. Terraform reported **8 resources destroyed**.
 
-## Goal
+![Terraform destroy](screenshots/assignment-03-15-terraform-destroy.png)
 
-Update Ubuntu and install Node.js, npm, and Git.
+## Challenges and resolutions
 
-### Evidence
+The initial VM had been deployed before cloud-init was added. I updated the Terraform configuration to attach `cloud-init.sh`, reviewed the replacement plan, and applied it. I then verified the automated deployment and Nginx service.
 
-#### Screenshot 7 — Terminal showing successful installation and the `node -v` and `npm -v` output
+Replacing the VM changed its SSH host key. Before reconnecting, I verified the new host-key fingerprint using Azure Run Command, removed the stale local host-key entry, and established a new SSH connection.
 
-Add your screenshot here.
+## Outcome
 
----
-
-# Task 7 — Clone, Build, and Serve the React App with Nginx
-
-## Goal
-
-Follow the `my-react-app` repository README to clone, install, and build the app, then serve the production build through Nginx.
-
-### Evidence
-
-#### Screenshot 8 — Terminal showing the successful React build
-
-Add your screenshot here.
-
----
-
-#### Screenshot 9 — Terminal showing that Nginx is active and running
-
-Add your screenshot here.
-
----
-
-# Task 8 — Test the Deployment
-
-## Goal
-
-Confirm the React application loads through the VM's public IP and navigation works.
-
-### Evidence
-
-#### Screenshot 10 — Browser showing the React application with the Azure VM public IP visible in the address bar
-
-Add your screenshot here.
-
----
-
-### Notes
-
-Write a short summary of what you built and any issues you encountered and how you resolved them.
-
-Write your answer here.
-
----
-
-# Submission Instructions
-
-- Add all required screenshots in your submission
-- Include the Azure VM public IP
-- Do not expose Azure credentials, passwords, or private keys
-
----
-
-# Completion Checklist
-
-- [ ] Task 1: `terraform-react-azure` project created (Screenshot 1)
-- [ ] Task 2: `main.tf` defines all required Azure resources (Screenshot 2)
-- [ ] Task 3: `terraform init` completed successfully (Screenshot 3)
-- [ ] Task 4: Plan applied and VM running with public IP (Screenshots 4–5)
-- [ ] Task 5: SSH connection verified (Screenshot 6)
-- [ ] Task 6: Node.js, npm, and Git installed (Screenshot 7)
-- [ ] Task 7: React app built and served through Nginx (Screenshots 8–9)
-- [ ] Task 8: App verified through the VM public IP (Screenshot 10)
-- [ ] Summary paragraph written (Notes)
-- [ ] No sensitive information exposed
-
----
-
-## 📌 About DMI & CloudAdvisory
-
-DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory) focused on real-world execution, systems thinking, and career readiness.
-
-It helps learners build strong DevOps foundations with hands-on experience.
-
----
-
-## 📌 Resources
-
-- 🌐 DMI Official Website: https://dmi.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 🎓 University: https://university.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 💬 Discord Community: https://discord.pravinmishra.com?utm_source=github&utm_medium=readme  
-- 📝 Blog: https://dmi.pravinmishra.com/blog?utm_source=github&utm_medium=readme  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
-- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
-
----
-
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+I provisioned Azure infrastructure with Terraform, automated the React deployment with cloud-init, verified the application through its public IP, and removed the assignment infrastructure with Terraform after collecting the evidence. No credentials, passwords, or private keys are included in this write-up.
