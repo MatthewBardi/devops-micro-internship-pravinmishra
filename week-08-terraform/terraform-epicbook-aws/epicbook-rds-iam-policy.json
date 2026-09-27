@@ -1,0 +1,42 @@
+{
+    "Version":  "2012-10-17",
+    "Statement":  [
+                      {
+                          "Sid":  "RDSRead",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "rds:Describe*",
+                                         "rds:ListTagsForResource"
+                                     ],
+                          "Resource":  "*",
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "RDSDeployment",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "rds:CreateDBInstance",
+                                         "rds:DeleteDBInstance",
+                                         "rds:ModifyDBInstance",
+                                         "rds:CreateDBSubnetGroup",
+                                         "rds:DeleteDBSubnetGroup",
+                                         "rds:ModifyDBSubnetGroup",
+                                         "rds:AddTagsToResource",
+                                         "rds:RemoveTagsFromResource"
+                                     ],
+                          "Resource":  [
+                                           "arn:aws:rds:us-east-1:144916935949:db:epicbook-*",
+                                           "arn:aws:rds:us-east-1:144916935949:subgrp:epicbook-*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1"
+                                                             }
+                                        }
+                      }
+                  ]
+}

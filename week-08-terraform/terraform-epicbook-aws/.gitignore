@@ -1,0 +1,6 @@
+# EpicBook secrets and private keys
+*.pem
+*.key
+*.ppk
+.env
+.env.*

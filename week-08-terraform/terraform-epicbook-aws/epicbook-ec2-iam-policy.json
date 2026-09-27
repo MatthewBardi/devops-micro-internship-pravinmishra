@@ -1,0 +1,300 @@
+{
+    "Version":  "2012-10-17",
+    "Statement":  [
+                      {
+                          "Sid":  "EC2Deployment",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "ec2:Describe*"
+                                     ],
+                          "Resource":  "*",
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "TerminateEpicBookInstancesOnly",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "ec2:TerminateInstances"
+                                     ],
+                          "Resource":  "arn:aws:ec2:us-east-1:144916935949:instance/*",
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1",
+                                                                 "aws:ResourceTag/Project":  "EpicBook"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "TagEpicBookInstancesOnCreation",
+                          "Effect":  "Allow",
+                          "Action":  "ec2:CreateTags",
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1:144916935949:instance/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:volume/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestTag/Project":  "EpicBook",
+                                                                 "ec2:CreateAction":  "RunInstances",
+                                                                 "aws:RequestedRegion":  "us-east-1"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "TagEpicBookNetworkOnCreation",
+                          "Effect":  "Allow",
+                          "Action":  "ec2:CreateTags",
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1:144916935949:vpc/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:subnet/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:internet-gateway/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:route-table/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:security-group/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestTag/Project":  "EpicBook",
+                                                                 "ec2:CreateAction":  [
+                                                                                          "CreateVpc",
+                                                                                          "CreateSubnet",
+                                                                                          "CreateInternetGateway",
+                                                                                          "CreateRouteTable",
+                                                                                          "CreateSecurityGroup"
+                                                                                      ],
+                                                                 "aws:RequestedRegion":  "us-east-1"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "DeleteEpicBookNetworkOnly",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "ec2:DeleteVpc",
+                                         "ec2:DeleteSubnet",
+                                         "ec2:DeleteInternetGateway",
+                                         "ec2:DeleteRouteTable",
+                                         "ec2:DeleteRoute",
+                                         "ec2:DeleteSecurityGroup"
+                                     ],
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1:144916935949:vpc/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:subnet/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:internet-gateway/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:route-table/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:security-group/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1",
+                                                                 "aws:ResourceTag/Project":  "EpicBook"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "EpicBookVpcSettings",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "ec2:ModifyVpcAttribute"
+                                     ],
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1:144916935949:vpc/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1",
+                                                                 "aws:ResourceTag/Project":  "EpicBook"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "EpicBookSubnetSettings",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "ec2:ModifySubnetAttribute"
+                                     ],
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1:144916935949:subnet/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1",
+                                                                 "aws:ResourceTag/Project":  "EpicBook"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "EpicBookRoutes",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "ec2:CreateRoute"
+                                     ],
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1:144916935949:route-table/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1",
+                                                                 "aws:ResourceTag/Project":  "EpicBook"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "EpicBookSecurityGroupRules",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "ec2:AuthorizeSecurityGroupIngress",
+                                         "ec2:RevokeSecurityGroupIngress",
+                                         "ec2:AuthorizeSecurityGroupEgress",
+                                         "ec2:RevokeSecurityGroupEgress"
+                                     ],
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1:144916935949:security-group/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1",
+                                                                 "aws:ResourceTag/Project":  "EpicBook"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "EpicBookInternetGatewayAttachment",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "ec2:AttachInternetGateway",
+                                         "ec2:DetachInternetGateway"
+                                     ],
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1:144916935949:vpc/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:internet-gateway/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1",
+                                                                 "aws:ResourceTag/Project":  "EpicBook"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "EpicBookRouteTableAssociations",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "ec2:AssociateRouteTable",
+                                         "ec2:DisassociateRouteTable"
+                                     ],
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1:144916935949:route-table/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:subnet/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1",
+                                                                 "aws:ResourceTag/Project":  "EpicBook"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "CreateTaggedEpicBookNetwork",
+                          "Effect":  "Allow",
+                          "Action":  [
+                                         "ec2:CreateVpc",
+                                         "ec2:CreateSubnet",
+                                         "ec2:CreateInternetGateway",
+                                         "ec2:CreateRouteTable",
+                                         "ec2:CreateSecurityGroup"
+                                     ],
+                          "Resource":  "*",
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestTag/Project":  "EpicBook",
+                                                                 "aws:RequestedRegion":  "us-east-1"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "LaunchEpicBookInstance",
+                          "Effect":  "Allow",
+                          "Action":  "ec2:RunInstances",
+                          "Resource":  "arn:aws:ec2:us-east-1:144916935949:instance/*",
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestTag/Project":  "EpicBook",
+                                                                 "ec2:InstanceType":  "t2.micro",
+                                                                 "aws:RequestedRegion":  "us-east-1"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "UseEpicBookNetworkForInstance",
+                          "Effect":  "Allow",
+                          "Action":  "ec2:RunInstances",
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1:144916935949:subnet/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:security-group/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1",
+                                                                 "aws:ResourceTag/Project":  "EpicBook"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "UseEC2LaunchDependencies",
+                          "Effect":  "Allow",
+                          "Action":  "ec2:RunInstances",
+                          "Resource":  [
+                                           "arn:aws:ec2:us-east-1::image/ami-*",
+                                           "arn:aws:ec2:us-east-1:144916935949:network-interface/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:volume/*",
+                                           "arn:aws:ec2:us-east-1:144916935949:key-pair/*"
+                                       ],
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "ImportEpicBookKeyPair",
+                          "Effect":  "Allow",
+                          "Action":  "ec2:ImportKeyPair",
+                          "Resource":  "arn:aws:ec2:us-east-1:144916935949:key-pair/epicbook-*",
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestTag/Project":  "EpicBook",
+                                                                 "aws:RequestedRegion":  "us-east-1"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "TagEpicBookKeyPairOnCreation",
+                          "Effect":  "Allow",
+                          "Action":  "ec2:CreateTags",
+                          "Resource":  "arn:aws:ec2:us-east-1:144916935949:key-pair/epicbook-*",
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestTag/Project":  "EpicBook",
+                                                                 "ec2:CreateAction":  "ImportKeyPair",
+                                                                 "aws:RequestedRegion":  "us-east-1"
+                                                             }
+                                        }
+                      },
+                      {
+                          "Sid":  "DeleteEpicBookKeyPair",
+                          "Effect":  "Allow",
+                          "Action":  "ec2:DeleteKeyPair",
+                          "Resource":  "arn:aws:ec2:us-east-1:144916935949:key-pair/epicbook-*",
+                          "Condition":  {
+                                            "StringEquals":  {
+                                                                 "aws:RequestedRegion":  "us-east-1",
+                                                                 "aws:ResourceTag/Project":  "EpicBook"
+                                                             }
+                                        }
+                      }
+                  ]
+}

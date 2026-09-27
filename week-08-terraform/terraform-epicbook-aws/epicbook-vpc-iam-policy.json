@@ -1,0 +1,21 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "CreateResourcesInsideEpicBookVpc",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:CreateSubnet",
+        "ec2:CreateRouteTable",
+        "ec2:CreateSecurityGroup"
+      ],
+      "Resource": "arn:aws:ec2:us-east-1:144916935949:vpc/vpc-061bffe7338adfd51",
+      "Condition": {
+        "StringEquals": {
+          "aws:ResourceTag/Project": "EpicBook",
+          "aws:RequestedRegion": "us-east-1"
+        }
+      }
+    }
+  ]
+}
