@@ -92,7 +92,7 @@ This is not a course. It is an internship-style program — real deployments, re
 <!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) -->
 
 <!-- Week 08 → Terraform -->
-<!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
+[![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
 
 <!-- Week 09 → Ansible -->
 <!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
@@ -138,7 +138,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/activity-7493377298847485954-Ght1 | https://medium.com/@ifybardi/what-i-learned-about-devops-lifecycle-and-agile-by-running-real-sprints-in-jira-e86b3428de8c |
 | 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/ugcPost-7497487646697508864-f6t_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABp_eQgBPlJcA09mSDh9Dmz_Fnr6k9cADN8 | https://medium.com/@ifybardi/what-i-learned-building-real-aws-infrastructure-during-week-6-of-my-devops-internship-468ed4cdf6f5 |
 | 07 | Azure Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/share-7502781655602900992-HHxt/ | https://medium.com/@ifybardi/what-i-built-and-learned-in-week-7-microsoft-azure-cloud-three-tier-architecture-and-security-87c27af34166 |
-| 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
+| 08 | Terraform | ✅ Completed | ✅ Solved | https://www.linkedin.com/feed/update/urn:li:activity:7516528165020684289/ | https://medium.com/@ifybardi/building-a-production-style-three-tier-aws-application-with-terraform-and-agentic-ai-1118bce0dd67 |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
