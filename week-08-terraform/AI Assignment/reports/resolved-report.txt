@@ -1,0 +1,11 @@
+Terraform Drift and Policy Review
+Full Name: Matthew Bardi
+Terraform Project: /c/Users/PC/Desktop/devops-micro-internship-pravinmishra/week-08-terraform/terraform-aws-vm
+Report: /c/Users/PC/Desktop/devops-micro-internship-pravinmishra/week-08-terraform/AI Assignment/reports/resolved-report.txt
+----------------------------------------
+[PASS] Terraform plan: no pending changes.
+[PASS] Destructive actions: no pending plan changes to inspect.
+[PASS] Open ingress: no pending plan changes to inspect.
+----------------------------------------
+Terraform detailed exit code: 0
+Overall Status: HEALTHY

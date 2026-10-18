@@ -1,0 +1,11 @@
+Terraform Drift and Policy Review
+Full Name: Matthew Bardi
+Terraform Project: /c/Users/PC/Desktop/devops-micro-internship-pravinmishra/week-08-terraform/terraform-aws-vm
+Report: /c/Users/PC/Desktop/devops-micro-internship-pravinmishra/week-08-terraform/AI Assignment/reports/drift-detected-report.txt
+----------------------------------------
+[WARN] Terraform plan: pending changes detected.
+[PASS] Destructive actions: no delete or replacement actions detected.
+[FAIL] Open ingress: 1 unsafe rule(s) expose non-HTTP/HTTPS traffic to 0.0.0.0/0.
+----------------------------------------
+Terraform detailed exit code: 2
+Overall Status: FAIL
