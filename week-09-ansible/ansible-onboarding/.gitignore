@@ -1,0 +1,36 @@
+# Python virtual environments
+.venv/
+venv/
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Ansible temporary files
+*.retry
+.ansible/
+
+# SSH private keys and sensitive files
+.ssh/
+id_rsa
+id_ed25519
+*.pem
+*.p12
+*.pfx
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+secrets.yml
+secrets.yaml
+vault-password*
+*.secret
+
+# Editor and OS temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
