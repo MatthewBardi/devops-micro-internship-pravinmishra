@@ -1,0 +1,19 @@
+# Example Terraform variables for Assignment 02
+# Replace the placeholder values before deployment.
+
+subscription_id = "YOUR-ACTIVE-SUBSCRIPTION-ID"
+
+location            = "eastus"
+resource_group_name = "rg-dmi-ansible-week09"
+vm_size             = "Standard_B1s"
+admin_username      = "azureuser"
+
+# Absolute path to an existing SSH public key.
+# Example for Windows:
+ssh_public_key_path = "C:/Users/PC/.ssh/dmi_ubuntu_ed25519.pub"
+
+# Replace with your current public IPv4 address plus /32.
+# Example only — do not use this address for deployment.
+allowed_ssh_cidr = "203.0.113.10/32"
+
+vm_names = ["web1", "web2", "app1", "db1"]
