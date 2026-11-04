@@ -1,4 +1,4 @@
-# Assignment 2 — Ad-Hoc Automation on Azure: 4 VMs, Inventory & Passwordless SSH
+﻿# Assignment 2 — Ad-Hoc Automation on Azure: 4 VMs, Inventory & Passwordless SSH
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
@@ -20,19 +20,23 @@ Provision four Ubuntu 22.04 VMs (`web1`, `web2`, `app1`, `db1`, Standard_B1s) wi
 
 #### Screenshot 1 — Terminal showing successful `terraform apply` output and `terraform output public_ips`
 
-Add your screenshot here.
+
+![Screenshot 1 - Successful Terraform apply](./screenshots/01-terraform-apply-success.png)
+
 
 ---
 
 #### Screenshot 2 — Azure Portal showing all four running Ubuntu VMs
 
-Add your screenshot here.
+![Screenshot 2](./screenshots/02-four-running-ec2-instances.png)
+
 
 ---
 
 #### Screenshot 3 — Network Security Group inbound rules showing SSH 22 and HTTP 80
 
-Add your screenshot here.
+![Screenshot 3](./screenshots/03-security-group-ssh-http.png)
+
 
 ---
 
@@ -46,7 +50,8 @@ Connect to each of the four VMs as `azureuser` and run `hostname` remotely witho
 
 #### Screenshot 4 — Terminal showing successful `hostname` output from all four passwordless SSH tests
 
-Add your screenshot here.
+![Screenshot 4](./screenshots/04-passwordless-ssh-hostnames.png)
+
 
 ---
 
@@ -60,7 +65,8 @@ Create `inventory.ini` mapping VM indices 0–1 to `[web]`, index 2 to `[app]`, 
 
 #### Screenshot 5 — Editor or terminal showing `inventory.ini` with the web, app, db, and all:vars sections
 
-Add your screenshot here.
+![Screenshot 5](./screenshots/05-ansible-inventory.png)
+
 
 ---
 
@@ -74,25 +80,33 @@ Run `ping`, `whoami`, and `uptime` against all hosts; install and start Nginx on
 
 #### Screenshot 6 — Terminal showing `ansible ping` SUCCESS for all four hosts
 
-Add your screenshot here.
+![Screenshot 6](./screenshots/06-ansible-ping-success.png)
+
 
 ---
 
 #### Screenshot 7 — Terminal showing `uptime` output for all four hosts
 
-Add your screenshot here.
+![Screenshot 7](./screenshots/07-ansible-uptime.png)
+
 
 ---
 
 #### Screenshot 8 — Terminal showing Nginx installation and service start on the web group
 
-Add your screenshot here.
+![Screenshot 8](./screenshots/08-nginx-installation-service.png)
+
 
 ---
 
 #### Screenshot 9 — Terminal showing `htop` installation on all hosts and group-targeted command output
 
-Add your screenshot here.
+![09a-htop-verification](./screenshots/09a-htop-verification.png)
+
+![09b-db-disk-usage](./screenshots/09b-db-disk-usage.png)
+
+![09c-memory-usage-all-hosts](./screenshots/09c-memory-usage-all-hosts.png)
+
 
 ---
 
@@ -100,7 +114,15 @@ Add your screenshot here.
 
 Describe an issue you faced and how you fixed it, what you learned, when you'd use an ad-hoc command instead of a playbook, and one challenge you faced during SSH or inventory setup.
 
-Write your answer here.
+## Assignment 2 — Reflection Notes
+
+Issue faced and resolution: Ansible initially failed to connect because my public IP address had changed. I updated the SSH security group rules using Terraform, which restored connectivity.
+
+SSH and inventory challenge: My database server had no public IP, so I configured an SSH jump host through a web server. I also resolved SSH host-key verification problems in WSL Ubuntu.
+
+What I learned: I learned how to provision EC2 instances using Terraform, configure passwordless SSH, create Ansible inventory groups, and execute ad-hoc commands to manage multiple Linux servers.
+
+When to use ad-hoc commands: I would use ad-hoc commands for quick tasks such as checking uptime, disk space, or service status. I would use playbooks for repeatable and more complex configuration tasks.
 
 ---
 

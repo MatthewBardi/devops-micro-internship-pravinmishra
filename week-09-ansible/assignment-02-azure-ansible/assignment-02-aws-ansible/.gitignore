@@ -1,0 +1,25 @@
+
+# Terraform working directory
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+
+# Local Terraform variables
+terraform.tfvars
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Private SSH keys
+*.pem
+*.key
+id_rsa
+id_ed25519
+week09-aws-ansible

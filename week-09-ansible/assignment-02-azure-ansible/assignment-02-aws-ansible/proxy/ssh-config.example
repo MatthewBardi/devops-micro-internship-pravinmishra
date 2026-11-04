@@ -1,0 +1,13 @@
+
+Host week09-web1
+    HostName WEB1_PUBLIC_IP
+    User ubuntu
+    IdentityFile ~/.ssh/week09-aws-ansible
+    IdentitiesOnly yes
+
+Host week09-db1
+    HostName DB1_PRIVATE_IP
+    User ubuntu
+    IdentityFile ~/.ssh/week09-aws-ansible
+    IdentitiesOnly yes
+    ProxyJump week09-web1

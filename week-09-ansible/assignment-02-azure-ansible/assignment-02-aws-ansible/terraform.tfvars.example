@@ -1,0 +1,7 @@
+
+aws_region       = "us-east-1"
+instance_type    = "t3.micro"
+vm_names         = ["web1", "web2", "app1", "db1"]
+public_key_path  = "~/.ssh/week09-aws-ansible.pub"
+ssh_allowed_cidr = "102.88.169.254/32"
+root_volume_size = 8
