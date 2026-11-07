@@ -1,0 +1,63 @@
+
+---
+# Assignment 3 - Multi-Play Static Website Deployment
+
+# Play 1: Install and start Nginx
+- name: Install and configure Nginx
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Install Nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+        update_cache: true
+
+    - name: Start and enable Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true
+
+# Play 2: Deploy the static website
+- name: Deploy static website
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Copy website index.html
+      ansible.builtin.copy:
+        src: files/index.html
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: "0644"
+      notify: Reload Nginx
+
+  handlers:
+    - name: Reload Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: reloaded
+
+# Play 3: Verify website from controller
+- name: Verify website HTTP response
+  hosts: web
+  gather_facts: false
+
+  tasks:
+    - name: Check website HTTP status
+      ansible.builtin.uri:
+        url: "http://{{ ansible_host }}/"
+        status_code: 200
+        return_content: false
+      delegate_to: localhost
+      register: website_response
+
+    - name: Assert website returned HTTP 200
+      ansible.builtin.assert:
+        that:
+          - website_response.status == 200
+        success_msg: "Website returned HTTP 200 successfully"
+        fail_msg: "Website HTTP verification failed"
